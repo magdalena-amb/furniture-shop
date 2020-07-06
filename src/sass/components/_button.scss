@@ -1,0 +1,57 @@
+.btn-main {
+  @extend .hover-animation;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 10px 30px;
+
+  &:not(.no-hover):hover {
+    color: #ffffff !important;
+    background-color: $primary;
+    text-decoration: none;
+  }
+}
+
+.btn-main-small {
+  @extend .btn-main;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+
+.btn-main-small-product {
+  @extend .btn-main;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 5px 10px;
+  font-weight: 400;
+  background-color: $primary;
+
+  &:not(.no-hover):hover {
+    color: #ffffff !important;
+    background-color: #000;
+    text-decoration: none;
+  }
+}
+
+.buttons > .btn-main-small {
+  visibility: hidden;
+}
+
+.btn-outline {
+  @extend .hover-animation;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #2a2a2a;
+  color: #2a2a2a;
+  font-size: 13px;
+  line-height: 22px;
+
+  &:hover {
+    background-color: #2a2a2a;
+    color: #ffffff;
+  }
+}
